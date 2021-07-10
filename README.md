@@ -2,7 +2,7 @@
 
 ## 1. Summary
 - Developed an accurate predictor of an NBA team’s final win percentage and playoff status by combining traditional statistics, like rebounds per game, and advanced statistics, like true shooting percentage. 
-- Compared the accuracy of the predictor after 10 games, 20 games, and 81 games. Achieved a Root Mean Squared Error of 3.8% for the regression and 91% accuracy for the classifier. 
+- Compared the accuracy of the predictor after 10 games, 20 games, and 81 games. Achieved a Root Mean Squared Error of 3.3% for the regression and 94% accuracy for the classifier. 
 - Surprisingly, after 10 games the predictor was already quite accurate, and after 20 games the increase in accuracy with more games dropped off significantly.
 - Performed feature selection on over 60 statistics using the f_regression and SelectKBest functions to account for negative values (specifically for +/-, net rating, etc...).
 - Compared the results of 6 classification models and 6 regression models such as linear regression, random forest, KNN, and SVM. 
