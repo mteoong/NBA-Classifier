@@ -18,7 +18,7 @@
   - Collected data from multiple pages (datasets on NBA.com were separated into multiple pages for traditional, advanced, and opponent statistics) and combined them into one table. Converted all the data into suitable formats for analysis. 
   #### 3. Feature Selection
   - Used three methods to determine which features to use out of the ~65 available metrics (from traditional, advanced, and opponent statistics).
-    1. Used matplotlib to create scatter plots of all the features and their correlation to win percentage. 
+    1. Used seaborn pairplot to create scatter plots of all the features and their correlation to win percentage. Also colored plots according to playoff status. 
     2. Applied the f_regression and SelectKBest class methods to extract the top features and compare their F statistics to help determine how many significant       features there were. 
     3. Plotted a correlation matrix with a heat map using the seaborn library. 
   #### 4. Classification and Regression Models
@@ -28,7 +28,18 @@
   - Classifier models were evaluated using their accuracy score and their confusion matrix. 
   - Regression models were evaluated using the root mean squared error. 
 
-## 4. Results
+## 4. Feature Selection
+#### Seaborn Pairplot
+![Screen Shot 2021-07-10 at 11 49 16 AM](https://user-images.githubusercontent.com/62133678/125150769-efc43000-e174-11eb-91e1-a40b630c9f22.png)
+
+#### F-Regression
+![f-regression-81](https://user-images.githubusercontent.com/62133678/125149961-d91ada80-e16e-11eb-809b-caa2c9a251aa.png)
+
+### Heat Map
+![heat-map](https://user-images.githubusercontent.com/62133678/125149968-dddf8e80-e16e-11eb-9f0c-da46ba1f7f3c.png)
+
+
+## 5. Results
 ![Screen Shot 2021-07-10 at 10 56 57 AM](https://user-images.githubusercontent.com/62133678/125149782-8f7dc000-e16d-11eb-8c6d-5f31108262e9.png)
 ![Screen Shot 2021-07-10 at 10 57 18 AM](https://user-images.githubusercontent.com/62133678/125149785-99072800-e16d-11eb-90a5-c09d283e6839.png)
 ![Screen Shot 2021-07-10 at 10 57 23 AM](https://user-images.githubusercontent.com/62133678/125149787-9c021880-e16d-11eb-859a-93e4e5a07d50.png)
